@@ -1,124 +1,167 @@
 body {
-    background-color: #F5EBDC;
-    font-family: sans-serif;
-    color: BLACK;
-    font-size: 1.2rem;
-    line-height: 1.4em;
-    margin: 0;
-  }
-  .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .header {
-    background-color: #502314;
-    border: 3px solid rgb(0, 0, 0);
-    padding: 1rem 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-  }
-  
-  .header a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  .logo-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
+  background-color: #FFFF;
+  font-family: Raleway;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  margin: 0;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+  .image {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #FBCB38;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a{
+  color: black;
+  text-decoration: none;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.barras-menu {
+  display: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a{
+  text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+  font-weight: 600;
+  font-size:x-large;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  color: black;
+}
+
+.main {
+  padding-top: 8rem;
+}
+
+.name{
+  text-align: center;
+}
+
+.nav-central{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  background: #FCFAF2;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.nav-central ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav-central li{
+  list-style: none;
+}
+
+.category{
+  color: #FBCB38;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.price{
+  text-align: right;
+  color: #FBCB38;
+  font-weight: bold;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.footer{
+  background-color: #FBCB38;
+  color: black;
+  padding: 3rem 0;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: black;
+  font-weight: 1000;
+  transition: all 0.2s linear;
+}
+.footer a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 800px) {
   .barras-menu {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1 rem;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .navigation ul {
     display: none;
   }
-  
-  .navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+
+  .navigation ul.show {
+    display: block;
   }
-  
+
   .navigation ul li {
-    display: inline-block;
+    display: block;
   }
-  
+
   .navigation ul li a{
     text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
     font-weight: 600;
-    font-size:x-large;
+    font-size:large;
     display: block;
     padding: 0.5rem 1rem;
     transition: all 0.2s linear;
     border-radius: 5px;
   }
-  
+
   .navigation ul li a:hover {
     color: black;
-  }
-  
-  .main {
-    padding-top: 8rem;
-  }
-  
-  .footer{
-    
-    background-color: #502314;
-    color: rgb(255, 255, 255);
-    padding: 3rem 0;
-    text-align: center;
-    margin-top: 6rem;
-  }
-  
-  .footer a{
-    text-decoration: none;
-    color: white;
-    font-weight: 1000;
-    transition: all 0.2s linear;  
-  }
-  .footer a:hover {
-    color: black;
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .barras-menu {
-      display: block;
-      cursor: pointer;
-      padding: 0.5rem 1 rem;
-    }
-  
-    .navigation {
-      width: 100%;
-    }
-    
-    .navigation ul {
-      display: none;
-    }
-  
-    .navigation ul.show {
-      display: block;
-    }
-    
-    .navigation ul li {
-      display: block;
-    }
-    
-    .navigation ul li a{
-      text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
-      font-weight: 600;
-      font-size:large;
-      display: block;
-      padding: 0.5rem 1rem;
-      transition: all 0.2s linear;
-      border-radius: 5px;
-    }
-    
-    .navigation ul li a:hover {
-      color: black;
-    }
   }
