@@ -1,7 +1,7 @@
 body {
-  background-color: black;
+  background-color: #F5EBDC;
   font-family: sans-serif;
-  color: white;
+  color: BLACK;
   font-size: 1.2rem;
   line-height: 1.4em;
   margin: 0;
@@ -13,8 +13,8 @@ body {
 }
 
 .header {
-  background-color: rgb(255, 102, 0);
-  border: 1px solid rgb(255, 255, 255);
+  background-color: #502314;
+  border: 3px solid rgb(0, 0, 0);
   padding: 1rem 0;
   position: fixed;
   left: 0;
@@ -23,7 +23,7 @@ body {
 }
 
 .header a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .navigation ul li a{
-  text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
+  text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
   font-weight: 600;
   font-size:x-large;
   display: block;
@@ -67,14 +67,14 @@ body {
 }
 
 .footer{
-  background-color: rgb(255, 102, 0);
-  color: black;
+  background-color: #502314;
+  color: white;
   padding: 4rem 0;
   text-align: center;
   margin-top: 6rem;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
   .barras-menu {
     display: block;
     cursor: pointer;
