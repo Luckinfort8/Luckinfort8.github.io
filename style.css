@@ -59,7 +59,7 @@ body {
 }
 
 .navigation ul li a:hover {
-  color: white;
+  color: black;
 }
 
 .main {
@@ -67,11 +67,22 @@ body {
 }
 
 .footer{
+  
   background-color: #502314;
-  color: white;
-  padding: 4rem 0;
+  color: rgb(255, 255, 255);
+  padding: 3rem 0;
   text-align: center;
   margin-top: 6rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  font-weight: 1000;
+  transition: all 0.2s linear;  
+}
+.footer a:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 800px) {
@@ -98,7 +109,7 @@ body {
   }
   
   .navigation ul li a{
-    text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
     font-weight: 600;
     font-size:large;
     display: block;
@@ -108,6 +119,6 @@ body {
   }
   
   .navigation ul li a:hover {
-    color: white;
+    color: black;
   }
 }
