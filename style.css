@@ -49,7 +49,7 @@ body {
 }
 
 .navigation ul li a{
-  text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+  text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
   font-weight: 600;
   font-size:x-large;
   display: block;
@@ -109,7 +109,7 @@ body {
   }
   
   .navigation ul li a{
-    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+    text-shadow: 0.5px 0.5px 1px white;
     font-weight: 600;
     font-size:large;
     display: block;
@@ -119,6 +119,6 @@ body {
   }
   
   .navigation ul li a:hover {
-    color: black;
+    color: white;
   }
 }
