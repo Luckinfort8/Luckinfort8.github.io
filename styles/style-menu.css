@@ -137,6 +137,7 @@ body {
   font-weight: 1000;
   transition: all 0.2s linear;
 }
+
 .footer a:hover {
   color: white;
 }
@@ -177,7 +178,6 @@ body {
   .navigation ul li a:hover {
     color: white;
   }
-<<<<<<< HEAD
 
   .category{
     color: #FBCB38;
@@ -221,6 +221,3 @@ body {
     max-width: 1000px;
     margin: 0 auto;
   }
-=======
- }
->>>>>>> ba74c20659e0efa516716a1e482bf6cf0b73fc74
