@@ -1,6 +1,6 @@
 body {
     background-color: #FFFF;
-    font-family: sans-serif;
+    font-family: raleway;
     color: BLACK;
     font-size: 1.2rem;
     line-height: 1.4em;
@@ -121,4 +121,13 @@ body {
     .navigation ul li a:hover {
       color: black;
     }
+  }
+
+  .container-terminos{
+    text-align: justify;
+    padding: 3%;
+  }
+
+  h1{
+    text-align: center;
   }
