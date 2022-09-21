@@ -1,5 +1,5 @@
 body {
-    background-color: #F5EBDC;
+    background-color: #FFFF;
     font-family: sans-serif;
     color: BLACK;
     font-size: 1.2rem;
@@ -13,7 +13,7 @@ body {
   }
   
   .header {
-    background-color: #502314;
+    background-color: #FBCB38;
     border: 3px solid rgb(0, 0, 0);
     padding: 1rem 0;
     position: fixed;
@@ -23,7 +23,7 @@ body {
   }
   
   .header a{
-    color: white;
+    color: black;
     text-decoration: none;
   }
   
@@ -49,7 +49,7 @@ body {
   }
   
   .navigation ul li a{
-    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+    text-shadow: 0.5px 0.5px 1px white;
     font-weight: 600;
     font-size:x-large;
     display: block;
@@ -59,7 +59,7 @@ body {
   }
   
   .navigation ul li a:hover {
-    color: black;
+    color: white;
   }
   
   .main {
@@ -68,8 +68,8 @@ body {
   
   .footer{
     
-    background-color: #502314;
-    color: rgb(255, 255, 255);
+    background-color: #FBCB38;
+    color: black;
     padding: 3rem 0;
     text-align: center;
     margin-top: 6rem;
@@ -77,12 +77,12 @@ body {
   
   .footer a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 1000;
     transition: all 0.2s linear;  
   }
   .footer a:hover {
-    color: black;
+    color: white;
   }
   
   @media only screen and (max-width: 800px) {
@@ -109,7 +109,7 @@ body {
     }
     
     .navigation ul li a{
-      text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+      text-shadow: 0.5px 0.5px 1px white;
       font-weight: 600;
       font-size:large;
       display: block;
@@ -119,6 +119,6 @@ body {
     }
     
     .navigation ul li a:hover {
-      color: black;
+      color: white;
     }
   }
