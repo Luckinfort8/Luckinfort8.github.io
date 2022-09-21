@@ -6,6 +6,10 @@ body {
   line-height: 1.4em;
   margin: 0;
 }
+.main-contenido h1{
+  line-height: 1.4em;
+  margin: 0 auto;
+}
 .container {
   width: 90%;
   max-width: 1000px;
@@ -49,7 +53,7 @@ body {
 }
 
 .navigation ul li a{
-  text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+  text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
   font-weight: 600;
   font-size:x-large;
   display: block;
@@ -64,6 +68,47 @@ body {
 
 .main {
   padding-top: 8rem;
+}
+
+.main-contenido{
+  text-align: center;
+}
+.main-contenido a{
+  text-decoration: none;
+  color: black;
+  font-weight: 1000;
+  transition: all 0.2s linear;  
+}
+.main-contenido a:hover {
+  color: #FBCB38;
+}
+
+.main-contenido section{
+  border-style: solid;
+  border-color: #FBCB38;
+  border-width: 4px;
+  font-family: "Comic Sans MS";
+  padding: 5px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-contenido section img{
+  display: block;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #FBCB38;
+}
+
+.main-contenido aside{
+  border-style: solid;
+  border-color: #FBCB38;
+  border-width: 4px;
+  font-family: "Comic Sans MS";
+  padding: 5px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .footer{
@@ -109,7 +154,7 @@ body {
   }
   
   .navigation ul li a{
-    text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
+    text-shadow: 0.5px 0.5px 1px white;
     font-weight: 600;
     font-size:large;
     display: block;
@@ -119,6 +164,6 @@ body {
   }
   
   .navigation ul li a:hover {
-    color: black;
+    color: white;
   }
 }
