@@ -1,6 +1,6 @@
   form {
     margin: 0 auto;
-    width: 300px;
+    width: 80%;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
@@ -17,11 +17,11 @@
   
   .formulary ul li label{
     display: inline-block;
-    width: 200px;
+    width: 60%;
     text-align: left;
   }
   .formulary ul li input,textarea{
-    width: 300px;
+    width: 70%;
     box-sizing: border-box;
     border: 1px solid #999;
   }
@@ -40,4 +40,23 @@
 
   button:hover{
     color: white;
+  }
+  @media only screen and (max-width: 800px) {
+    form {
+      margin: 0 auto;
+      width: 300px;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+    }    
+    .formulary ul li label{
+      display: inline-block;
+      width: 200px;
+      text-align: left;
+    }
+    .formulary ul li input,textarea{
+      width: 300px;
+      box-sizing: border-box;
+      border: 1px solid #999;
+    }
   }
