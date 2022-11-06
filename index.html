@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
   <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="scripts/constantes.js" defer></script>
   <script defer src="main.js"></script>
 
   <title>Burguety | Inicio</title>
@@ -43,49 +44,28 @@
           <li><a href="vistas/nosotros.html" class="nav-nosotros">Nosotros</a></li>
         </ul>
       </nav>
-    </div> 
+    </div>
   </header>
 
   <main class="main">
     <div class="container main-contenido">
-      <section>
-        <h1>Hamburguesas Burguety</h1>
+      <section id="section-content">
+        <h2>Hamburguesas Burguety</h2>
         <p>
           ¿Estas buscando una hamburguesa para saciar tu hambre?<br>
-          ¡Estas en el lugar correcto!, <a href="vistas/menu.html">Haz click aquí</a> 
+          ¡Estas en el lugar correcto!, <a href="vistas/menu.html">Haz click aquí</a>
         </p>
-        <img src="images/hamb-inicio.jpg" width="300" alt="Hamburgesa"/>
+        <img src="images/hamb-inicio.jpg" width="300" height="250" alt="Hamburgesa"/>
+        <input type="button" value="anterior" class="btn-enviar" id="anterior">
+        <input type="button" value="siguiente" class="btn-enviar" id="siguiente">
       </section>
-      <section>
-        <h2>¡Conoce nuestra historia!</h2>
-        <p>
-          En burguety nos preocupamos por la salud de nuestros clientes y su satisfacción.<br>
-          Conoce como burguety surgió, nuestras caídas y como logramos llegar a muchas partes, <a href="vistas/nosotros.html">Haz click aquí</a> para conocer nuestra historia
-        </p>
-        <img src="images/image.jpg" width="300" alt="Hamburgesa"/>
-      </section>
-      <section>
-        <h2>¡Contactanos!</h2>
-        <p>
-          ¿Te gustaría ponerte en contacto con nosotros?<br>
-          <a href="vistas/contactanos.html">Haz click aquí</a>. Gracias
-        </p>
-        <img src="images/contacto.png" width="300" alt="Hamburgesa"/>
-      </section>
-      <aside>
-        <h2>Sabias que...</h2>
-        <p>Una hamburguesa promedio tiene unas 295 calorias; además, si no comiste bien, una buena hamburguesa de <strong>burguety</strong> puede aportarte eso que te falto en el día.</p>
-        <img src="images/pikachu.jpg" width="300" alt="Hamburgesa"/>
-      </aside>
-      
-    </div>
   </main>
   <footer class="footer">
-    
+
         <h2>Hamburguesas Burgety</h2>
         <p>
-          Consulta nuestros 
-          <a href="vistas/terminos-y-condiciones.html">terminos y condiciones.</a> 
+          Consulta nuestros
+          <a href="vistas/terminos-y-condiciones.html">terminos y condiciones.</a>
         </p>
         <hr>
         <p>TM & © 2022 Burguety Corporation. All Rights reserved</p>
