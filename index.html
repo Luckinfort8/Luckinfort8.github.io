@@ -13,12 +13,16 @@
 
   <link rel="stylesheet" href="style.css" id="final"/>
   <link rel="stylesheet" href="styles/style-index.css">
+  <link rel="stylesheet" href="styles/style-reloj.css">
   <!-- Fuente-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
   <script src="scripts/constantes.js" defer></script>
   <script src="scripts/menu-hamburguesa.js"defer></script>
   <script defer src="main.js"></script>
+  <script  src="scripts/reloj.js"defer></script>
+
+  </script>
 
   <title>Burguety | Inicio</title>
 </head>
@@ -29,16 +33,23 @@
       <span class="barras-menu" id="barras"><img src="images/icons/barras-menu.png" alt="barras menu" width="40"/></span>
         <nav class="navigation">
           <ul id="navegacion">
-            <li><a href="vistas/pedido.html" class="nav-pedido">¡Ordena aquí!</a></li>
+            <li><a href="vistas/pedido.html" class="nav-pedido">Login</a></li>
             <li><a href="vistas/menu.html" class="nav-menu">Menú</a></li>
             <li><a href="vistas/contactanos.html" class="nav-contactanos">Contactanos</a></li>
             <li><a href="vistas/nosotros.html" class="nav-nosotros">Nosotros</a></li>
+            <li><a><i class="bx bx-shopping-bag nav-nosotros" id="cart-icon" ></i></a></li>
           </ul>
         </nav>
     </div>
   </header>
 
   <main class="main">
+    <!-- Reloj -->
+  <div class="container-clock">
+    <h1 id="time">00:00:00</h1>
+    <p id="date">date</p>
+  </div>
+
     <div class="container main-contenido">
       <section id="section-content">
         <h2>Hamburguesas Burguety</h2>
