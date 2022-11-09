@@ -18,6 +18,7 @@
 
   <script src="../scripts/menu-hamburguesa.js"defer></script>
   <script defer src="../scripts/main-contacto.js"></script>
+  <script defer src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
   <title>Burguety | Contactanos</title>
 </head>
@@ -29,65 +30,96 @@
       <span class="barras-menu" id="barras"><img src="../images/icons/barras-menu.png" alt="barras menu" width="40"/></span>
       <nav class="navigation">
         <ul id="navegacion">
-          <li><a href="../vistas/pedido.html" class="nav-pedido">¡Ordena aquí!</a></li>
+          <li><a href="../vistas/pedido.html" class="nav-pedido">Login</a></li>
           <li><a href="../vistas/menu.html" class="nav-menu">Menú</a></li>
           <li><a href="../vistas/contactanos.html" class="nav-contactanos">Contactanos</a></li>
           <li><a href="../vistas/nosotros.html" class="nav-nosotros">Nosotros</a></li>
+		  <li><a><i class="bx bx-shopping-bag nav-nosotros" id="cart-icon" ></i></a></li>
         </ul>
       </nav>
-    </div> 
+    </div>
   </header>
 
-  <main class="main">
+  <main>
+		<header class="name">
+			<h1>
+			  CONTÁCTANOS
+			</h1>
+		</header>
 
-    <header class="name">
-      <h1>
-        CONTÁCTANOS
-      </h1>
-    </header>
+		  <br><br><br>
 
-    <br><br><br>
+		  <div class="container info-container">
+			<section class="info-form">
+			  <p>
+				Si tiene alguna duda, sugerencia o comentario favor de comunicarse con nosotros.
+				Estaremos encantados de resolver sus peticiones.
+			  </p><br>
 
-    <div class="container info-container">
-      <section class="info-form">
-        <p>
-          Si tiene alguna duda, sugerencia o comentario favor de comunicarse con nosotros.
-          Estaremos encantados de resolver sus peticiones.
-        </p>
+			  <a href="#"><i class="fa fa-phone">
+			  </i>543-908-231</a><br><br>
+			  <a href="#"><i class="fa fa-envelope">
+			  </i>burguety@hamburguesas.com.mx</a><br><br>
+			  <a href="#"><i class="fa fa-map-marked">
+			  </i>Puebla, México</a><br><br>
+			</section>
 
-        <br><br><br>
+			<form action="" class="formulario" id="formulario">
 
-        <a href="#"><i class="fa fa-phone">
-        </i>543-908-231</a><br><br>
-        <a href="#"><i class="fa fa-envelope">
-        </i>burguety@hamburguesas.com.mx</a><br><br>
-        <a href="#"><i class="fa fa-map-marked">
-        </i>Puebla, México</a><br><br>    
-      </section>
+				<!-- Nombre -->
+				<section class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label"></label>
+					<article class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</article>
+					<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros y letras.</p>
+				</section>
 
-      <form action="#" autocomplete="off">
-        <input type="text" name="nombre"
-        placeholder="Ingresa tu nombre"
-        class="campo"><br>
-        <input type="email" name="email"
-        placeholder="Ingresa tu correo electrónico" class="campo"><br>
-        <textarea name="mensaje" placeholder="Ingresa tu mensaje"
-        ></textarea><br>
-        <input type="submit" name="enviar" value="enviar mensaje"
-        class="btn-enviar">
-      </form>
+				<!-- Email -->
+				<section class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label"></label>
+					<article class="formulario__grupo-input">
+						<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingresa tu correo electrónico">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</article>
+					<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos y guiones.</p>
+				</section>
 
-    </div>
-  </main>
+				<!-- Teléfono -->
+				<div class="formulario__grupo" id="grupo__mensaje">
+					<label for="mensaje" class="formulario__label"></label>
+					<div class="formulario__grupo-input">
+						<textarea type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+				</div>
 
-  <footer class="footer">   
+				<!-- Error -->
+				<section class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Rellena el formulario correctamente. </p>
+				</section>
+
+				<section class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Envio exitoso!</p>
+				</section>
+			</form>
+
+		 </div>
+
+	</main>
+
+
+  <footer class="footer">
         <h2>Hamburguesas Burgety</h2>
         <p>
-          Consulta nuestros 
-          <a href="../vistas/terminos-y-condiciones.html">terminos y condiciones.</a> 
+          Consulta nuestros
+          <a href="../vistas/terminos-y-condiciones.html">terminos y condiciones.</a>
         </p>
         <hr>
         <p>TM & © 2022 Burguety Corporation. All Rights reserved</p>
   </footer>
+
 </body>
 </html>
