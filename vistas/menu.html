@@ -10,14 +10,13 @@
   <meta name="description" content="Descubre la gran variedad de productos."/>
 
   <!-- Iconos -->
-
+  
   <link rel="stylesheet" href="../style.css" id="final"/>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
   <link rel="stylesheet" href="../styles/style-menu.css"/>
   <!-- Fuente-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-  <script src="../scripts/menu-hamburguesa.js"defer></script>
-  <script defer src="../scripts/main-menu.js"></script>
 
   <title>Burguety | Menú</title>
 </head>
@@ -28,10 +27,11 @@
       <span class="barras-menu" id="barras"><img src="../images/icons/barras-menu.png" alt="barras menu" width="40"/></span>
       <nav class="navigation">
         <ul id="navegacion">
-          <li><a href="../vistas/pedido.html" class="nav-pedido">¡Ordena aquí!</a></li>
+          <li><a href="../vistas/pedido.html" class="nav-pedido">Login</a></li>
           <li><a href="../vistas/menu.html" class="nav-menu">Menú</a></li>
           <li><a href="../vistas/contactanos.html" class="nav-contactanos">Contactanos</a></li>
           <li><a href="../vistas/nosotros.html" class="nav-nosotros">Nosotros</a></li>
+          <li><a><i class="bx bx-shopping-bag nav-nosotros" id="cart-icon" ></i></a></li>
         </ul>
       </nav>
     </div>
@@ -39,6 +39,29 @@
 
   <!--Título principal-->
   <main class="main">
+
+    <div class="cart">
+      <h2 class="cart-title">Tu carrito</h2>
+      <div class="cart-content">
+        <div class="cart-box">
+        <img src="../images/hamb3.jpg" alt="" class="cart-img">
+          <div class="detail-box">
+          <div class="cart-product-title">Bur-sencilla</div>
+          <div class="cart-price">$75.00</div>
+          <input type="number" value="1" class="cart-quantity">
+          </div>
+          <i class="bx bxs-trash cart-remove"></i>
+        </div>
+      </div>
+
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button type="button" class="btn-buy">Comprar</button>
+      <i class="bx bx-x" id="close-cart"></i>
+    </div>
+
     <header class="name">
       <h1>
         MENÚ
@@ -54,8 +77,6 @@
       </ul>
     </nav>
 
-    <br><br>
-
     <!--CATEGORÍA HAMBURGUESAS-->
     <div class="category">
       <h2><a id="hamburguesas"></a><em>Hamburgesas</em></h2>
@@ -63,54 +84,44 @@
 
     <!--Primera Hamburgesa-->
     <figure>
-      <img  class="imageI" src="../images/hamb3.jpg" alt="Hamburgesa" title="Hamburguesa"/>
-
-      <section class="container">
-        <br><br><br><br>
-        <h3>Bur-sencilla</h3>
+      <img  class="imageI product-img" src="../images/hamb3.jpg" alt="Hamburgesa" title="Hamburguesa"/>
+      <section class="box">
+        <h3 class="product-title">Bur-sencilla</h3>
         <p>
           Nuestra bur-sencilla está preparada con 1 carne de
           res a la parrilla, cebolla, jitomate, queso americano,
           lechuga y un delicioso pan con ajonjolí.<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$75.00 pesos</em>
+        <em>$75.00</em>
       </div>
+    </section>
     </figure>
-    
-    <br><br><br>
+
 
     <!--Segunda Hamburgesa-->
     <figure>
-      <img class="imageD" src="../images/hamb5.jpg" alt="Hamburgesa" title="Hamburguesa"/>
-
-      <section class="container">
-        <br><br><br>
-        <h3>Bur-tocino</h3>
+      <img class="imageD product-img" src="../images/hamb5.jpg" alt="Hamburgesa" title="Hamburguesa"/>
+      <section class="box">
+        <h3 class="product-title">Bur-tocino</h3>
         <p>
           Nuestra bur-tocino está preparada con 1 carne de res
           a la parrilla, queso manchego, cebolla, lechuga,
           jitomate, mayonesa, tiras de tocino crujiente y un
           delicioso pan de ajonjolí.<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$95.00 pesos</em>
+        <em>$95.00</em>
       </div>
+    </section>
     </figure>
 
-    <br><br><br>
 
     <!--Tercera Hamburgesa-->
     <figure>
-      <img class="imageI" src="../images/hamb8.jpg" alt="Hamburgesa" title="Hamburguesa"/>
-
-      <section class="container">
-      <br><br><br>
-        <h3>Bur-special double</h3>
+      <img class="imageI product-img" src="../images/hamb8.jpg" alt="Hamburgesa" title="Hamburguesa"/>
+      <section class="box">
+        <h3 class="product-title">Bur-special double</h3>
         <p>
           Nuestra Bur-special double, se compone de dos
           carnes de res a la parrilla, jitomate, cebolla,
@@ -118,85 +129,72 @@
           crujientes panes con ajonjolí y un pan sencillo
           intermedio.<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$100.00 pesos</em>
+        <em>$100.00</em>
       </div>
+    </section>
     </figure>
 
-    <br><br><br>
 
     <!--Cuarta Hamburgesa-->
     <figure>
-      <img class="imageD" src="../images/hamb6.jpg" alt="Hamburgesa" title="Hamburguesa"/>
-
-      <section class="container">
-      <br><br><br>
-        <h3>Bur-York</h3>
+      <img class="imageD product-img" src="../images/hamb6.jpg" alt="Hamburgesa" title="Hamburguesa"/>
+      <section class="box">
+        <h3 class="product-title">Bur-York</h3>
         <p>
           Nuestra Bur-York está preparada con 1 carne
           estilo New York, queso americano, cebolla,
           jitomate, lechuga, pepinillos, aderezo de mayonesa
           y chipotle y un delicioso pan crujiente<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$95.00 pesos</em>
+        <em>$95.00 </em>
       </div>
+    </section>
     </figure>
 
-    <br><br><br>
 
     <!--Quinta Hamburgesa-->
     <figure>
-      <img  class="imageI" src="../images/hamb1.jpg" alt="Hamburgesa" title="Hamburguesa"/>
-      <section class="container">
-        <br><br>
-        <h3>Bur-Vegui</h3>
+      <img  class="imageI product-img" src="../images/hamb1.jpg" alt="Hamburgesa" title="Hamburguesa"/>
+      <section class="box">
+        <h3 class="product-title">Bur-Vegui</h3>
         <p>
           Nuestra Bur-Vegui está preparada con 1
           carne hecha de lentejas y especias, doble
           ración de lechuga, jitomate, cebolla, queso
           vegano y un delicioso pan de ajonjolí.<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$105.00 pesos</em>
+        <em>$105.00 </em>
       </div>
+    </section>
     </figure>
 
-    <br><br><br>
 
     <!--Sexta Hamburgesa-->
     <figure>
-      <img class="imageD"src="../images/hamb4.jpg" alt="Hamburgesa" title="Hamburguesa"/>
-      <section class="container">
-      <br><br>
-        <h3>Bur-extrAderezo</h3>
+      <img class="imageD product-img"src="../images/hamb4.jpg" alt="Hamburgesa" title="Hamburguesa"/>
+      <section class="box">
+        <h3 class="product-title">Bur-extrAderezo</h3>
         <p>
           Nuestra Bur-extrAderezo está preparada con tiras de
           pollo frito, lechuga fresca, jitomate y nuestro especial
           aderezo de chipotle-mayonesa con un un ligero toque
           de especias, servido sobre un esponjoso pan crujiente.<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$95.00 pesos</em>
+        <em>$95.00</em>
       </div>
+    </section>
    </figure>
 
-   <br><br><br>
 
     <!--Septima Hamburgesa-->
     <figure>
-      <img class="imageI" src="../images/hamb7.jpg" alt="Hamburgesa" title="Hamburguesa"/>
-      <section class="container">
-        <br><br>
-        <h3>Bur-baguette </h3>
+      <img class="imageI product-img" src="../images/hamb7.jpg" alt="Hamburgesa" title="Hamburguesa"/>
+      <section class="box">
+        <h3 class="product-title">Bur-baguette </h3>
         <p>
           Nuestra extravagante Bur-baguette está preparada
           con un sabor especial de la carne de pollo estilo
@@ -204,14 +202,13 @@
           pepinillos, y un toque de puré de tomate, sobre
           un pan estilo baguette. <br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$100.00 pesos</em>
+        <em>$100.00</em>
       </div>
-    </figure>      
+    </section>
+    </figure>
 
-    <br><br><br><br><br><hr><br>
+    <hr>
 
     <!--BEBIDAS-->
     <div class="category">
@@ -220,29 +217,25 @@
 
     <!--Primera Bebida-->
     <figure>
-      <img class="imageI" src="../images/naran.jpg" alt="Jugo de naranja" title="Jugo de naranja"/>
-      <section class="container">
-        <br><br><br><br><br><br><br><br><br>
-          <h3>Jugo de naranja</h3>
+      <img class="imageI product-img" src="../images/naran.jpg" alt="Jugo de naranja" title="Jugo de naranja"/>
+      <section class="box">
+          <h3 class="product-title">Jugo de naranja</h3>
           <p>
             Nuestro delicioso jugo de naranja, hecho 100%
             con fruta natural.<br>
           </p>
-      </section>
-
       <div class="price">
-        <em>$25.00 pesos</em>
+        <em>$25.00</em>
       </div>
+    </section>
     </figure>
 
-    <br><br><br>
 
     <!--Segunda Bebida-->
     <figure>
-      <img class="imageD" src="../images/malt.jpg" alt="Malteada" title="Malteada"/>
-      <section class="container">
-      <br><br><br>
-        <h3>Malteada de Chocolate</h3>
+      <img class="imageD product-img" src="../images/malt.jpg" alt="Malteada" title="Malteada"/>
+      <section class="box">
+        <h3 class="product-title">Malteada de Chocolate</h3>
         <p>
           Nuestra de deliciosa malteada de chocolate
           hecha a base de leche de almendras,
@@ -250,101 +243,85 @@
           toque de vainilla, acompañada de crema batida
           y granillo de chocolate.<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$45.00 pesos</em>
+        <em>$45.00</em>
       </div>
+    </section>
     </figure>
 
-    <br><br>
 
     <!--Tercera Bebida-->
     <figure>
-      <img class="imageI" src="../images/ref.jpg" alt="Refresco" title="Refresco"/>
-      <section class="container">
-        <br><br><br><br>
-          <h3>Refresco</h3>
+      <img class="imageI product-img" src="../images/ref.jpg" alt="Refresco" title="Refresco"/>
+      <section class="box">
+          <h3 class="product-title">Refresco</h3>
           <p>
             Único y refrescante para acompañar tus
             hamburguesas. Múltiples sabores(manzana, limón
             y naranja).<br>
           </p>
-      </section>
-
       <div class="price">
-        <em>$25.00 pesos</em>
+        <em>$25.00</em>
       </div>
+    </section>
     </figure>
 
-    <br><br><br><br><b><br></b><br><br><hr><br>
+    <hr>
 
     <!--POSTRES-->
     <div class="category">
       <h2><a id="postres"></a><em>Postres</em></h2>
     </div>
 
-    <br>
-
     <!--Primer Postre-->
     <figure>
-      <img class="imageI" src="../images/hel.jpg" alt="Helado" title="Helado"/>
-      <section class="container">
-        <br>
-          <h3>Helado de chocolate</h3>
+      <img class="imageI product-img" src="../images/choco.jpg" alt="Helado" title="Helado"/>
+      <section class="box">
+          <h3 class="product-title">Helado de chocolate</h3>
           <p>
             Nuestro delicioso helado de chocolate hecho
             a base de helado artesanal, con trozos de
             chocolate amargo, sobre un barquillo sabor
             vainilla. <br>
           </p>
-        </section>
-
         <div class="price">
-          <em>$55.00 pesos</em>
+          <em>$55.00</em>
         </div>
+      </section>
     </figure>
 
-    <br><br><br><br><br>
 
     <!--Segundo Postre-->
     <figure>
-      <img class="imageD" src="../images/galle.jpg" alt="Galletas" title="Galletas"/>
-      <section class="container">
-        <br>
-          <h3>Galletas tipo polvorón</h3>
+      <img class="imageD product-img" src="../images/galle.jpg" alt="Galletas" title="Galletas"/>
+      <section class="box">
+          <h3 class="product-title">Galletas tipo polvorón</h3>
           <p>
             Nuestras deliciosas galletas, sabor
             naranja, tipo polvorón.<br>
           </p>
-      </section>
-
       <div class="price">
-        <em>7 x $30.00 pesos</em>
+        <em>7 x $30.00</em>
       </div>
+    </section>
     </figure>
 
-    <br><br><br>
 
     <!--Tercer Postre-->
     <figure>
-      <img class="imageI" src="../images/roll.jpg" alt="Roles de canela" title="Rolls"/>
-      <section class="container">
-        <br><br><br><br><br><br>
-        <h3>Roles de Canela</h3>
+      <img class="imageI product-img" src="../images/roll.jpg" alt="Roles de canela" title="Rolls"/>
+      <section class="box">
+        <h3 class="product-title">Roles de Canela</h3>
         <p>
           Nuestros especiales roles de canela, hechos a base de
           harina trigo, con un glaseado de azúcar y una esencia de
           canela.<br>
         </p>
-      </section>
-
       <div class="price">
-        <em>$50.00 pesos</em>
+        <em>$50.00</em>
       </div>
+    </section>
     </figure>
-
-    <br><br><br><br><br>
   </main>
 
   <footer class="footer">
@@ -354,8 +331,10 @@
         <a href="../vistas/terminos-y-condiciones.html">terminos y condiciones.</a>
       </p>
       <hr>
-      <p>TM & © 2022 Burguety Corporation. All Rights reserved</p>
+      <p>TM & ©️ 2022 Burguety Corporation. All Rights reserved</p>
   </footer>
 
+  <script src="../scripts/menu-hamburguesa.js"defer></script>
+  <script defer src="../scripts/main-menu.js"></script>
   </body>
 </html>

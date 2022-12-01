@@ -19,7 +19,7 @@
   <script src="../scripts/menu-hamburguesa.js"defer></script>
   <script defer src="../scripts/main-pedido.js"></script>
 
-  <title>Burguety | Pedido</title>
+  <title>Burguety | Login</title>
 </head>
 <body>
   <header class="header">
@@ -28,47 +28,98 @@
       <span class="barras-menu" id="barras"><img src="../images/icons/barras-menu.png" alt="barras menu" width="40"/></span>
       <nav class="navigation">
         <ul id="navegacion">
-          <li><a href="../vistas/pedido.html" class="nav-pedido">¡Ordena aquí!</a></li>
+          <li><a href="../vistas/pedido.html" class="nav-pedido">Login</a></li>
           <li><a href="../vistas/menu.html" class="nav-menu">Menú</a></li>
           <li><a href="../vistas/contactanos.html" class="nav-contactanos">Contactanos</a></li>
           <li><a href="../vistas/nosotros.html" class="nav-nosotros">Nosotros</a></li>
+          <li><a><i class="bx bx-shopping-bag nav-nosotros" id="cart-icon" ></i></a></li>
         </ul>
       </nav>
     </div> 
   </header>
 
-  <main class="main">
-    <div class="container form-pedido">  
-      <form class="formulary">
-        <h1>Dirección de envio</h1>
-        <ul>
-          <li>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" />
-          </li>
-          <li>
-            <label for="adress">Direccion:</label>
-            <input type="text" id="adress" name="user_adress" />
-          </li>
-          <li>
-            <label for="tel">Numero Telefonico:</label>
-            <input type="text" id="tel" name="user_tel" />
-          </li>
-          <li>
-            <label for="msg">Detalles extra:</label>
-            <textarea id="msg" name="user_details"></textarea>
-          </li>
-        </ul>
-        <div class="pedido">
-          <h2>Detalles de compra</h2>
-          <p>Aquí van los detalles del producto</p>
+  <main>
+    <form action="" class="formulario" id="formulario">
+
+      <!-- Usuario -->
+      <section class="formulario__grupo" id="grupo__usuario">
+        <label for="usuario" class="formulario__label">Usuario</label>
+        <article class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="ara02">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </article>
+        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+      </section>
+
+      <!-- Nombre -->
+      <section class="formulario__grupo" id="grupo__nombre">
+        <label for="nombre" class="formulario__label">Nombre</label>
+        <article class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Aranza Michelle">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </article>
+        <p class="formulario__input-error">El usuario tiene que ser de 4 a 20 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+      </section>
+
+      <!--Email-->
+      <section class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<article class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="usuario@gmail.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </article>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos y guiones.</p>
+      </section>
+
+      <!-- Teléfono -->
+      <section class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Teléfono</label>
+        <article class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="2461392308">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </article>
+        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+      </section>
+
+      <!-- Contraseña -->
+      <section class="formulario__grupo" id="grupo__password">
+        <label for="password" class="formulario__label">Contraseña</label>
+        <article class="formulario__grupo-input">
+          <input type="password" class="formulario__input" name="password" id="password">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </article>
+        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+      </section>
+
+      <!-- Contraseña  -->
+      <section class="formulario__grupo" id="grupo__password2">
+        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+        <div class="formulario__grupo-input">
+          <input type="password" class="formulario__input" name="password2" id="password2">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
         </div>
-        <button>
-          Pedir
-        </button>
-      </form>  
-    </div>
+        <p class="formulario__input-error">La contraseña no coincide</p>
+      </section>
+
+      <!-- Terminos y Condiciones -->
+      <section class="formulario__grupo" id="grupo__terminos">
+        <label class="formulario__label">
+          <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+          Acepto los Terminos y Condiciones
+        </label>
+      </section>
+
+      <section class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Rellena correctamente todos los campos.</p>
+      </section>
+
+      <section class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Enviado exitosamente!</p>
+      </section>
+    </form>
   </main>
+
   <footer class="footer">
     
         <h2>Hamburguesas Burgety</h2>
