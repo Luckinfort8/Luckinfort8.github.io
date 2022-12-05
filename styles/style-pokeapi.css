@@ -1,3 +1,25 @@
+body {
+  background: rgb(255, 255, 240);
+  text-align: center;
+}
+
 .img-pokemon {
   height: 200px;
+  background-repeat: no-repeat;
+  background-position: center
 }
+
+@media only screen and (max-width: 800px){
+  .img-pokemon{
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+
+}
+  
