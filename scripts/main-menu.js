@@ -2,6 +2,12 @@ let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
 
+let elementos = document.querySelector("select");
+elementos.onchange="consola();";
+function consola() {
+    console.log("hola");
+}
+
 //Abrir carrito
 cartIcon.onclick = () =>{
     cart.classList.add('active');
